@@ -8,8 +8,15 @@
     font-family: 'Poppins';
     transition: none;
 }
+body{
+    overflow-x: hidden;
+}
 .title{
     font-size: 20px;
+}
+.title h1{
+    font-weight: 600;
+    color: #DCE1E3;
 }
 main{
     background: #efefef;
@@ -20,24 +27,26 @@ main{
     width: 100%;
     top: 0;
     color:  #f0f9ff;
-    padding: 10px 10%;
+    padding: 10px 8%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     transition: all 0.5s ease;
 }
-
 .menu{
     display: none;
 }
 .list li
 {
     margin: 8px;
-    padding: 8px;
-    font-size: 20px; 
+    padding: 8px 12px;
+    font-size: 18px; 
     display:inline-flex;
+    font-weight: 500;
     border-radius: 6px;
+    letter-spacing: 1px;
 }
 .box > div{
     width: 15px;
@@ -61,7 +70,6 @@ a{
     height: 100%;
 }
 .content{
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 100px;
@@ -76,13 +84,16 @@ a{
     padding: 15px;
     color: blue;
 }
-button{cursor: pointer;}
+button{
+    cursor: pointer;
+}
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .about-main{
-    margin: 25% 10%;
+    padding: 25% 10%;
 }
 .service-1 h1{
     text-align: center;
@@ -220,11 +231,10 @@ footer{
 @media (max-width:860px)
 {   
     .title{ 
-        font-size: px;
+        font-size: 10px;
     }
     .menu{
         display: block;
-        justify-content: end;
     }
     .list{
         display: none;
@@ -239,6 +249,6 @@ footer{
         font-size: 18px !important;
     }
     .title{
-        font-size: 16px;
+        font-size: 10px;
     }
 }
